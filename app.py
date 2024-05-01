@@ -30,7 +30,7 @@ import time
 
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# # Load environment variables from .env file
 load_dotenv()
 
 
@@ -498,7 +498,7 @@ def refresh():
 
 # Run the Flask app
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=8080)
 
 
 
