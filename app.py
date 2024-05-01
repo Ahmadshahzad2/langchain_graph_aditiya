@@ -60,7 +60,7 @@ doc_splits = text_splitter.split_documents(docs_list)
 vectorstore = Chroma.from_documents(
     documents=doc_splits,
     collection_name="rag-chroma",
-    embedding=OpenAIEmbeddings(api_key='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'),
+    embedding=OpenAIEmbeddings(),
 )
 retriever = vectorstore.as_retriever()
 
